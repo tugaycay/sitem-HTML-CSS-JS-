@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap')
+
+   /* css' de yorum satırı böyle olur... */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    background:url(arkaplan.jpg);
+    height:100vh;
+    background-size:%100 %100;
+  
+  .container .navbar{
+    width: % 100px;
+    height:% 80px ;
+    background: rgba(red,green,blue,alpha)
+  }
+}
+.navbar.logo {
+  display:inline-block;
+  margin: left 100px;
+  margin-top: 20px;
+}
+  .navbar ul{
+    float: right;
+    margin-right: 20px;
+    
+  }
+  .navbar ul li{
+    list-style: none;  /* başındaki ikonlar silinir.*/
+    display: inline-block; /* yan yana gelmesini sağlarız.*/
+    margin:0 8px;
+    line-height:80px;
+  }
+  .navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family:Roboto;
+
+
+  }
+  .navbar ul li a.active,
+  .navbar ul li a.hover{
+    background-color: #ff6e00;
+    border-radius: 2px;
+  }
+
+.border{
+margin-left: 500px;
+margin-top: -50px;
+
+}
+.border table{
+  background: linear-gradient(
+    rgb(66, 66, 245),white,rgb(66, 66, 245)
+   );
+   border-radius: 20px solid white;
+}

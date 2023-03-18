@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KULLANICI GİRİŞ</title>
+    <link rel="stylesheet" href="KULLANICI.CSS">
+   
+    <script type="text/javascript"> 
+
+        function fonk1()
+		{
+			var rakam = 0;
+			var bharf = 0;
+			var kharf = 0;
+		
+		    var veri = document.getElementById("txt").value; 
+			uzunluk = veri.length;
+			sonkarakter = veri[uzunluk-1]; 
+
+				for(var i = 1; uzunluk>=i; i++)
+		{
+		 var a	= veri[uzunluk-i];
+			
+			if(a>='0' && a<='9')
+			{
+			
+			rakam++;
+			}
+			if(a>='A' && a<='Z')
+			{
+			
+			bharf++;
+			}
+			if(a>='a' && a<='z')
+			{
+			
+			kharf++;
+			}
+		}
+		
+		if(rakam>0 && bharf>0 && kharf>0 && uzunluk>=1)
+	      {
+		        alert("GEÇERSİZ PAROLA CANIM HOCAM TEKRAR DENEYİNİZ.");
+		  }
+		  else
+		  {
+                 alert(" HOCAM PAROLA GEÇERLİ");		  
+		  }
+		
+		}
+    </script>
+</head>
+<body>
+
+    <div class="con"> 
+        <div class="nav">
+          
+                <a href="#"><img src="otel logo.jpg " style="width: 150px;px;px;height: 150px;" ></a>
+            
+            <ul>
+                <li><a href="index.html" class="active">ANA SAYFA</a></li>
+                <li><a href="GALERİ.html" class="active">GALERİ</a></li>
+                <li><a href="REZERVASYON.html"  class="active">REZERVASYON</a></li>
+                <li><a href="HAKKIMIZDA.html"  class="active">HAKKIMIZDA</a></li>
+                <li><a href="İLETİŞİM.html" class="active" >İLETİŞİM</a></li>
+                <li><a href="KULLANICI.HTML" class="active" >GİRİŞ</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+
+
+
+        <form action="#">
+
+            <div class="title" > KULLANICI GİRİŞİ</div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Kullanıcı Adı Giriniz..."  required>
+                <div class="underline" ></div>
+            </div>
+
+            <div class="input-box">
+            
+                <input type="password" placeholder="Şifrenizi Giriniz..." id="txt">
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-box button">
+                <input type="button" value="GİRİŞ" onclick="fonk1()">
+            </div>
+
+        </form>
+        <div class="text">veya Sosyal Medyayla Bağlanın</div>
+        <div class="github">
+            <a href="https://github.com/login"><i class="fab fa-github"></i>Github ile Giriş</a>
+        </div>
+        <div class="twitter">
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i>Twitter ile Giriş</a>
+        </div>
+        <div class="facebook">
+            <a href="https://tr-tr.facebook.com/"><i class="fab fa-facebook"></i>Facebook ile Giriş</a>
+        </div>
+    </div>
+    
+</body>
+</html>
